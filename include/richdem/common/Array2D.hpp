@@ -1171,7 +1171,23 @@ class Array2D {
 
     for(xy_t y=0;y<height();y++){
       for(xy_t x=0;x<width();x++)
-        std::cout<<std::setw(5)<<data[xyToI(x,y)]<<" ";
+        std::cout<<std::setw(5)<<(int)data[xyToI(x,y)]<<" ";
+      std::cout<<std::endl;
+    }
+  }
+
+  /**
+    @brief Prints the flat indices of the entire array
+
+    @param[in]     msg   Optional message to print above the block
+  */
+  void printAllIndices(const std::string msg="") const {
+    if(!msg.empty())
+      std::cout<<msg<<std::endl;
+
+    for(xy_t y=0;y<height();y++){
+      for(xy_t x=0;x<width();x++)
+        std::cout<<std::setw(5)<<xyToI(x,y)<<" ";
       std::cout<<std::endl;
     }
   }
