@@ -1176,7 +1176,7 @@ class Array2D {
 
     for(xy_t y=0;y<height();y++){
       for(xy_t x=0;x<width();x++)
-        std::cout<<std::setw(5)<<(int)data[xyToI(x,y)]<<" ";
+        std::cout<<std::setw(5)<<(int)_data[xyToI(x,y)]<<" ";
       std::cout<<std::endl;
     }
   }
