@@ -2,9 +2,7 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 //#include "catch/catch.hpp"
 #include "doctest.h"
-#include "richdem/common/Array2D.hpp"
-#include "richdem/common/loaders.hpp"
-
+#include <richdem/common/Array2D.hpp>
 #include <richdem/richdem.hpp>
 using namespace richdem;
 
